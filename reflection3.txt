@@ -5,8 +5,7 @@ When someone else is working on a project or i make changes from a different PC,
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
-
-    Fill in your answer here
+cause i would like the working version to be remote, and if it auto updates,it might update  a buggy version to remote or a test version which is in the process of screening 
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?

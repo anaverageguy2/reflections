@@ -1,18 +1,37 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+When we intialize a repository , it has now features of version control. It adds a file .git .
+we need to do it as before it was just a normal directory, changes made to it will not be remembered, so we do it to have version control
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+staging area is different from working directory in the sense that it contains files that we may want to
+commit in the logical commit. repositiory contains the file that git is tracking
+it offers ability to commit as amny files in one logical change and the ability to remove changes that were done by mistake
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+Lets suppose we have made changes to two different files that are part of same logical change, then we can add them to staging area and then making commit we will have a single commit at that logocal change.
+have only one commit
+if we had no staging area ,then add might be equivalent to commit as it would directly make a change in the repository,which may lead to more than one commit per logical change
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+In situations where we need to make an experimental version or add a competely new feature , branches will be useful.
+Sopposing we need to add a new feature , if one does add a new expiremwntal feature in main branch ,it may take a lot of time and effort to get all things right.
+instead we just create a branch for our experimental feature and then merge it with master branch if we are satisfied with it
+
 
 How do the diagrams help you visualize the branch structure?
 
+diagrams help us visualise where the a new branch is created , its like a tree , main branch is like the main trunk and other branches are stems that grow from it,
+and new branches can grow from other branches and here it becomes special tree, branches can merge with each other,diagrams help us see where the branches stem from and where they end 
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+the result is that it now contains the commits of the both branches . so its like two branches now meet and become one huge brnach .This neew branch has  the commits of all the merged branches .
+It is represented in the diagram due to all the older commits being reacheable from the merged node
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
